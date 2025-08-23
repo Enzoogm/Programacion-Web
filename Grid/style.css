@@ -1,0 +1,98 @@
+body{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.23rTExSzKrDYLgPIz3bfMwHaFj%26pid%3DApi&f=1&ipt=710d3d12b946862d04026519d5ed781c6dd58ab4e0a365bee167e158035a3620&ipo=images");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+.pika{
+    background-color: #f5c904;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    color: white;
+} 
+.pika:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+}
+
+.char{
+    background-color: #f58504;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    color: white;
+}
+.char:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+}
+
+.mew{
+    background-color: #92033a;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    color: white;
+}
+.mew:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grilla{
+    display: grid;
+    /* crea 3 columnas */
+    /* grid-template-columns: 200px 200px 200px; */
+    /* repite 3 columnas */
+    /* grid-template-columns: repeat(3, 200px); */
+    /* fr es una fraccion y divide la pagina en la cantidad que diga el primer valor de la funcion */
+    grid-template-columns: repeat(3, 300px);
+   /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+    grid-auto-rows: auto;
+    gap: 10px;
+    
+}
+
+.centrar-grilla{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 70%;
+    object-fit: cover;
+    /* aspect ratio modifica la relacion de aspecto de la foto 
+    valor opcional en este ejercicio */
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+
+
+}
+
+@media (max-width: 1024px){
+    .grilla{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px){
+    .grilla{
+        grid-template-columns: 1fr;
+    }
+}

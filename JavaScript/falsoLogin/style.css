@@ -1,0 +1,37 @@
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  width: 200px;
+  margin: 10px;
+}
+.block-link {
+  width: 200px;
+  margin: 10px;
+  font-size: 10px;
+}
+.login-rectangulo {
+  color: black;
+  background-color: rgb(9, 163, 224);
+  font-size: 10px;
+  text-align: center; /*alineacion de texto*/
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20%;
+  padding: 40px;
+}
+
+.contenedor-flexible {
+  display: flex;
+  max-width: 100px;
+}
+
+.login-estructura {
+  text-align: center;
+}
+
+.button {
+  border-bottom: 100px;
+  color: black;
+}

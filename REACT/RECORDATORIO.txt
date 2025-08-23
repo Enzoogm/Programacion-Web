@@ -1,0 +1,48 @@
+nmp i instala node_modules
+
+Los componentes cuando se declaran, siempre arrancan con mayuscula y siempre retornan estetica. 
+Ejemplo: "Mybutton"
+
+Los archivos son extencion .jsx.
+
+Para poder retornar 2 cosas al la vez, crear un div que compacte el return. <-- siempre despues del return.
+
+<></> No afectaria el SEO
+siempre debe de tener un packet.json en el cual va toda la info importante del proyecto y como 
+levantarlo, ahi van los nombres, tipo, script, version, dependencias.
+
+Las dependencias son utilidades que nosotros instalamos para la pagina
+dependencias de desarrollo, son dependencias que nos ayudan a nosotros como desarrolladores para
+ayudarnos a nosotros para hacer el codigo mas facil.
+
+el INDEX del html no se toca asi tal cual como está
+
+en eslint.config.js se encargar de mostrarnos los errores posibles que hay o que nos pueden pasar en react.
+
+
+El css global, se importa en main.jsx.
+import nombreArchivo.css
+
+
+Siempre dentro del src va una carpeta que se llame 
+
+Las props son valores que les podemos pasar a los componentes para que ese componente realice una accion
+
+
+La palabra use, siempre en minuscula
+
+El state, tiene una variable y una funcion actualizada y el valor inicial
+el valor inicial es lo que creo con lo que va a empezar, int, str o list.
+con el setCharacters va actualizando el useState.
+siempre usar el mismo nombre que al principio del const, ejemplo:
+const [Nombre, setNombre] = useState([] O "" O 0)
+
+Siempre el nombre 
+
+cuando pasemos una funcion dentro del boton, se hace sin parentesis, ejemplo: onclick={nombreVariable}
+
+los componentes van a devolver interfaces
+
+El useEffect va a ejecutarse 1 vez o las veces que sea
+
+el provider es compartir datos a cada componente del jsx

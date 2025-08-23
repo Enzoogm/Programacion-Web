@@ -1,0 +1,42 @@
+/*comentario*/
+
+/*selectores*/
+
+/*etiqueta*/
+/*modificamos directamente la etiqueta
+ a la cual estamos apuntando*/
+
+p {
+  color: #ffffff;
+}
+
+/*clase*/
+.button-custom {
+  color: blue;
+}
+
+/*ID*/
+#titulo {
+  color: bisque;
+}
+
+.contenedor {
+  color: peru; /*modifica el color de la letra*/
+  background-color: dimgray; /*color de fondo*/
+  font-size: 50px; /*cambia tamaño de la letra*/
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center; /*alineacion de texto*/
+  border: 2px solid black; /*pone color en el borde*/
+  border-radius: 50px; /*radio del borde*/
+  width: 400px; /*ancho*/
+  height: 50px; /*alto*/
+}
+
+.button-div {
+  padding: 10px; /*distancia desde el elemento hasta los bordes*/
+  margin: 30px; /*distancia desde los bordes hacia afuera*/
+}
+
+.contenedor-flexible {
+  display: flex;
+}
