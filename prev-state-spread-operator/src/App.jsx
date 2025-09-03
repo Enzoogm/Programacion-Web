@@ -5,26 +5,32 @@ function App() {
   const [num, setNum] = useState([1, 2, 3, 4]);
   const [persona, setPersona] = useState({ nombre: "Pepito", edad: 30 });
 
-  // Tare agregar números consecutivos
-  function myFunction() {
+  function agregarNumero() {
     const ultimo = num[num.length - 1];
     setNum([...num, ultimo + 1]);
   }
 
-  // Tarea agregar propiedad al objeto usando spread operator
-  //y que al hacer click en un boton dispare la funcion y muestre por consola 
+  function agregarApellido() {
+    setPersona({ ...persona, apellido: "García" });
+    console.log({ ...persona, apellido: "García" });
+  }
 
-  //Partiendo de {nombre: "Pepito", edad: 30}, cambia solo nombre a "Luis usando el spread"
+  function cambiarNombre() {
+    setPersona({ ...persona, nombre: "Luis" });
+    console.log({ ...persona, nombre: "Luis" });
+  }
 
   return (
     <>
-      <div>
-        <h2>agregar numeros</h2>
-        {num.map((item, index) => (
-          <p key={index}>{item}</p>
-        ))}
-        <button onClick={myFunction}>Agregar Número</button>
-      </div>
+      <h2>agregar numeros</h2>
+      {num.map((item, i) => (
+        <p key={i}>{item}</p>
+      ))}
+      <button onClick={agregarNumero}>Agregar Número</button>
+
+      <h2>Persona</h2>
+      <button onClick={agregarApellido}>Agregar Apellido</button>
+      <button onClick={cambiarNombre}>Cambiar Nombre</button>
     </>
   );
 }
